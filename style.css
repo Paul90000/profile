@@ -1,0 +1,181 @@
+body,html {
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background-color: #FFEAEC;
+  font-size: 1em;
+  line-height: 3em;
+}
+
+em {
+  font-family: 'Lora', serif;
+  font-size: 50px;
+}
+
+em:hover {
+  color: #FCA311;
+  font-size: 60px;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+#my_profile_link {
+  margin: 0;
+  font-size: 20px;
+  border: 1px outset #7F49C1;
+  border-radius: 24px 24px 24px 24px;
+  padding: 7px;
+}
+
+#my_profile_link:hover {
+  cursor: pointer;
+  color: #7F49C1;
+  transition: 0.7s ease;
+  font-size: 22px;
+}
+
+p, a {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0 1em;
+  color: black;
+}
+
+h1 {
+  color: #7F49C1;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #FCA311;
+  font-size: 30px;
+}
+
+h2:hover {
+  color: #7F49C1;
+  font-size: 33px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+img {
+  min-width: auto;
+  max-height: 10em;
+  border-radius: 20%;
+  margin: 0 3em;
+  }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row-reverse;
+  justify-content: center;
+  margin-top: 1em;
+  }
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.wrapper_profile_details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 5em 0 0;
+}
+
+.box_1, .box_2, .box_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  border: 1px outset #FCA311;
+  border-radius: 24px 24px 24px 24px;
+  margin: 1em;
+}
+
+.profile_links {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.fa-brands {
+  color: #FCA311;
+  font-size: 25px;
+  transition: 1s ease;
+}
+
+.fa-brands:hover {
+  color: #7F49C1;
+  font-size: 40px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+
+/* Media queries */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .header_wrapper {
+    margin: 1em 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+  padding: 0;
+}
+}
+
+
+@media (max-width: 390px) {
+  /* For a screen < 390px, this CSS will be read */
+  .header_wrapper {
+    margin: 1em 2em;
+}
+
+img {
+  padding: 0;
+}
+}
+
+
+@media (max-width: 326px) {
+  /* For a screen < 326px, this CSS will be read */
+  .header_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    min-width: 150px;
+}
+
+img {
+  padding: 0px;
+  min-width: auto;
+  max-height: 13em;
+  border-radius: 30%;
+}
+
+.box_1, .box_2, .box_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border: 1px outset #FCA311;
+    border-radius: 24px 24px 24px 24px;
+    margin: 7px;
+}
+}
